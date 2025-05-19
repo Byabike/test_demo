@@ -1,7 +1,7 @@
 ## 1. 环境说明
 运行以下代码自动安装所需库
 ```
-pip requirements.txt
+pip install requirements.txt
 ```
 若运行时，库从github上自动下载模型失败，则需根据报错信息与链接手动操作,放在库中的相应位置
 
