@@ -11,7 +11,7 @@ pip install requirements.txt
 ### 2.1 初始数据集构建
 数据集选择从[ ImageNet 网站](https://image-net.org/)下载，下载链接为[ILSVRC2012_img_val.tar](https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar)，并放在正确位置，采用python构建初始数据集，运行：
 ```
-py data_set.py
+python data_set.py
 ```
 
 
