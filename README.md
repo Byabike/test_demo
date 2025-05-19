@@ -80,9 +80,9 @@ out_pic             # 方案最终重建结果图
 final_nums              # 总共测试帧
 BATCH_SIZE              # 每批评价计算的样本数
 original_dir            # 原始图像地址
-NTC_dir                 # 重建图像目录
+NTC_dir                 # 混合方案重建图像目录
 H265_dir                # H265重建图像目录
 out_eval                # 实验结果存储地址
-index_H265              # 判断H265PSNR是否输出，为1时输出
-index_NTC               # 判断NTCPSNR是否输出，为1时输出
+index_H265              # 判断H.265结果是否计算，为1时输出
+index_NTC               # 判断混合方案结果是否计算，为1时输出
 ```
