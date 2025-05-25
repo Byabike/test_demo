@@ -24,6 +24,8 @@ out_pic_dir          # H265编码图片输出地址
 wrongbits            # 误比特率配置，模拟信道传输
 bppout               # bpp输出配置，布尔型变量，true时输出每帧bpp与平均bpp
 ```
+
+
 在DCT系数提取阶段，误比特率设置无影响，可设为0。此外还需要将H.265项目下\source\encoder\encoder.h中的相应参数进行改动，如下：
 ```
 outputdatas         # 用于判断是否提取编码端DCT系数，布尔型变量，true时执行提取
@@ -54,6 +56,8 @@ tu_dir              # TU规则的存储地址
 | 10.7 |             0.0000246              |
 | 10.8 |             0.0000042              |
 | 10.9 |             0.0000012              |
+
+
 再运行完所有信噪比条件下的H.265编解码图片后，定位到H.265项目根目录下\end\libde265\slice.cc文件中的residual_coding函数中将变量input_NTCcoeff更改为true，
 ```
 input_NTCcoeff         # 判断是否导入后处理DCT系数，true时导入后处理数据
